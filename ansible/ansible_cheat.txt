@@ -1,0 +1,9 @@
+ansible-playbook --synatax-check fileNAME.yaml #Check for syntax
+ansible-playbook -C fileNAME.yaml #Dry run
+ansible-playbook --step fineNAME.yaml #step by step execution 
+ansible-doc -l #list all ansible modules    
+ansible-doc -s moduleNAME  #Give example how to use this module moduleNAME
+ansible hostGROUPNAME (all) -m moduleNAME (command) -a argument (id) -i inventoryFILE #On host group Execute module command on with attribute id and using inventory file
+ansible hostGROUPNAME (all) -m moduleNAME (shell) -a attribute (env) -i inventoryFILE #On host group Execute module shell on with attribute env and using inventory file
+
+
